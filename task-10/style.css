@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 4rem; /* To account for the fixed navigation bar */
+}
+
+.page {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+/* Gradient backgrounds for each page */
+#home {
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+}
+
+#about {
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+}
+
+#services {
+    background: linear-gradient(to bottom right, #43cea2, #185a9d);
+}
+
+#contact {
+    background: linear-gradient(to bottom right, #ff512f, #dd2476);
+}
+
+.page:target {
+    display: block;
+    opacity: 1;
+}
+
+/* Styling for page content */
+.page h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.page p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .page h1 {
+        font-size: 2.5rem;
+    }
+
+    .page p {
+        font-size: 1.2rem;
+    }
+}
