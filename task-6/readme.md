@@ -27,10 +27,10 @@ This project demonstrates a **Tabbed Content Interface** created using HTML and 
 ## Screenshots
 
 ### Tab 1: Beautiful Sky
-![Beautiful Sky](./images/sky.jpg)
+![Beautiful Sky](./images/tab-1.png)
 
 ### Tab 2: Amazing Sunset
-![Amazing Sunset](./images/sunset.jpg)
+![Amazing Sunset](./images/tab-2.png)
 
 ### Tab 3: Starry Night
-![Starry Night](./images/night.jpg)
+![Starry Night](./images/tab-3.png)
