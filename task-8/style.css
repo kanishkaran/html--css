@@ -1,0 +1,83 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .accordion {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Hide the checkbox */
+  .accordion-checkbox {
+    display: none;
+  }
+  
+  /* Style the label */
+  .accordion-label {
+    display: block;
+    padding: 20px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #444;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .accordion-label:hover {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  
+  /* Add an icon to indicate expand/collapse */
+  .accordion-label::after {
+    content: '\25BC'; /* Down arrow */
+    float: right;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-checkbox:checked + .accordion-label::after {
+    transform: rotate(180deg); /* Rotate arrow when expanded */
+  }
+  
+  /* Style the content */
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 20px;
+    background-color: #fff;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Expand content when checkbox is checked */
+  .accordion-checkbox:checked + .accordion-label + .accordion-content {
+    max-height: 300px; /* Adjust based on content height */
+    padding: 20px;
+  }
+  
+  /* Add a smooth shadow effect when expanded */
+  .accordion-checkbox:checked + .accordion-label {
+    background-color: #e9e9e9;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
