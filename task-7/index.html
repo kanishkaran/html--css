@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State-of-the-Art Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="carousel">
+        <!-- Radio Buttons for Manual Navigation -->
+        <input type="radio" name="slides" id="slide1" class="carousel-radio" checked>
+        <input type="radio" name="slides" id="slide2" class="carousel-radio">
+        <input type="radio" name="slides" id="slide3" class="carousel-radio">
+
+        <!-- Slides -->
+        <div class="carousel-slides">
+            <div class="carousel-slide">
+                <img src="https://picsum.photos/1000/400?random=1" alt="Placeholder Slide 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://picsum.photos/1000/400?random=2" alt="Placeholder Slide 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="https://picsum.photos/1000/400?random=3" alt="Placeholder Slide 3">
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="carousel-dots">
+            <label for="slide1" class="dot" aria-label="Go to Slide 1"></label>
+            <label for="slide2" class="dot" aria-label="Go to Slide 2"></label>
+            <label for="slide3" class="dot" aria-label="Go to Slide 3"></label>
+        </div>
+    </div>
+</body>
+</html>
