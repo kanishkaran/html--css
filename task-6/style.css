@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Tabs Container */
+.tabs-container {
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* overflow: hidden; */
+    text-align: center;
+}
+
+/* Tab Labels */
+
+.tab-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    margin: 0 5px; /* Add spacing between tabs */
+    font-size: 1.2rem; /* Increase font size for better visibility */
+    top: -50px;
+    
+}
+
+.tab-label:hover {
+    background-color: #555;
+}
+
+/* Hide Radio Buttons */
+.tab-radio {
+    display: none;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 20px; /* Add spacing between tabs and content */
+}
+
+/* Show Content for Selected Tab */
+#tab1:checked ~ .tab-content#content1,
+#tab2:checked ~ .tab-content#content2,
+#tab3:checked ~ .tab-content#content3 {
+    display: block;
+}
+
+/* Active Tab Styling */
+#tab1:checked + .tab-label,
+#tab2:checked + .tab-label,
+#tab3:checked + .tab-label {
+    background-color: #555;
+    color: #ff9800;
+}
+
+/* Card Styling */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    width: 100%;
+}
+
+.card-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card-container .img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-container .title {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-container .para {
+    font-size: 1rem;
+    color: #666;
+}
