@@ -103,19 +103,32 @@ body {
 
 /* Auto-Sliding Animation */
 @keyframes slide-animation {
-    0%, 33.33% {
+    0% {
         transform: translateX(0%);
     }
-    33.34%, 66.66% {
+    25% {
+        transform: translateX(0%);
+    }
+    33% {
         transform: translateX(-100%);
     }
-    66.67%, 100% {
+    58% {
+        transform: translateX(-100%);
+    }
+    66% {
         transform: translateX(-200%);
+    }
+    91% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }
 
+
 .carousel-slides {
-    animation: slide-animation 12s infinite;
+    animation: slide-animation 9s infinite ease-in-out;
 }
 
 /* Pause Auto-Sliding on Hover */
