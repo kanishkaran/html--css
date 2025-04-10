@@ -31,7 +31,7 @@ body {
 /* Slides Wrapper */
 .carousel-slides {
     display: flex;
-    width: 300%; /* 100% per slide times 3 slides */
+    width: auto; 
     transition: transform 0.8s ease-in-out; /* Smooth transition */
 }
 
