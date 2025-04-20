@@ -1,6 +1,6 @@
 # CSS Only Multi-Page Website Simulator
 
-This project is a fully functional, multi-section website that simulates the experience of navigating between different pages—all created using **CSS only**. It leverages the `:target` pseudo-class and CSS animations to create smooth transitions between sections.
+This project is a fully functional, multi-section website that simulates the experience of navigating between different pages—all created using **CSS only**. It leverages the `:target` pseudo-class and CSS animations to create smooth transitions between sections
 
 ## Question
 
