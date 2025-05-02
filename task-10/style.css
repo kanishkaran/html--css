@@ -43,7 +43,7 @@ main {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    padding-top: 4rem; /* To account for the fixed navigation bar */
+    padding-top: 4rem; 
 }
 
 .page {
